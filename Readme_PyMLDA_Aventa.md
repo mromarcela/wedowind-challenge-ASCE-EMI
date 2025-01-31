@@ -59,7 +59,7 @@ The PyMLDA software uses additional packages required for the algorithm's operat
 
 ### 🚀 Launch the PyMLDA
 
-You can start the project by running the `PyMLDA_Machine_Learning_for_Damage_Assessment.ipynb` or `pymlda_machine_learning_for_damage_assessment.py` file in the root directory. With this, the application settings are loaded from the DI dataset `DI_FRAC_Exp-estimation.xlxs`, which is also available in the repository and described in [1,2]. The system starts processing the DI dataset using the selected model and provides some evaluations on it. The final output is a classification of the system's healthy condition as damaged or healthy and the damage quantification with a variability associated with the estimation.
+You can start the project by running the `PyMLDA_Machine_Learning_for_Damage_Assessment.ipynb` or `pymlda_machine_learning_for_damage_assessment.py` file in the root directory. With this, the application settings are loaded from the DI dataset `DI_FRAC_Exp-estimation.xlxs`, which is also available in the repository. The system starts processing the DI dataset using the selected model and provides some evaluations on it. The final output is a classification of the system's healthy condition as damaged or healthy and the damage quantification with a variability associated with the estimation.
 
 
 ## 🧩 Contribution Guide
@@ -67,30 +67,20 @@ You can start the project by running the `PyMLDA_Machine_Learning_for_Damage_Ass
 Contributing to open-source codes is a rewarding method to learn, teach, and gain experience. We welcome all contributions, from bug fixes to new features and extensions. Do you want to be a contributor to the project? Read more about it on our page (https://sites.google.com/view/marcelamachado/publications/open-source).
 
 
-## 📝 Citation
-
-If you find **PyMLDA** useful for your research or development, please cite the  following:
-
-```
-@inproceedings{PyMLDA2024,
-  title={PyMLDA - Machine Learning for Damage Assessment},
-  author={ Coelho, J.S. and Machado, M.R. and  Sousa, A.A.S.R.},
-  booktitle={},
-  year={2024}
-}
-```
-
 ## 🟢 Versions
 - Version 1
   - Implementation of the PyMLDA in Python language.
+  - Supporting as input only the damage index already processed.
+- Version 2
+  - Implementation of new features extractor based on time series and a new relative change damage index was included.
   - Supporting as input only the damage index already processed. 
 
-
+<!--
 ## 🟠 Next realease
 
 - Incorporation of Damage Index calculation and selection of the better DI
 - Raw data will be given as input (Natural Frequency, temporal and frequency response of the dynamic system)
-
+-->
 
 ##  References
 
@@ -108,13 +98,6 @@ https://doi.org/10.1016/j.dib.2024.110043.
 
 If you find **PyMLDA** useful for your research or development, please cite the  following:
 
-```
-@inproceedings{PyMLDA2024,
-  title={PyMLDA - Machine Learning for Damage Assessment},
-  author={ Coelho, J.S. and Machado, M.R. and  Sousa, A.A.S.R.},
-  booktitle={},
-  year={2024} }
-```
 ```
 @article{PyMLDAsoft24,
 author = {Coelho, J.S., and Machado, M.R., and Souza, A.A.S.R.D.},
