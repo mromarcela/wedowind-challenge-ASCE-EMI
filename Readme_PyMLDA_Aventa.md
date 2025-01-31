@@ -13,7 +13,7 @@ The Aventa proposed monitoring model is based on the open-code PyMLDA.  The nove
 
 The Aventa monitoring application consists of eight steps, comprising receiving the acquired data (step 1), data processing (step 2), feature selection (step 3), and pattern recognition and clustering (step 4). Subsequently, data splitting is performed in step 5. Classification ML algorithms (steps 6 and 7) used for damage condition assessment, pattern recognition and classification. Finally (step 8), the algorithm furnishes information regarding the damage state based on the classification algorithm outcomes for evaluation based on the metrics and confusion matrix. The novelty proposed in this study and improved in version 1 of PyMLDA are the features extraction based on temporal signal and the new relative change damage index.   The workflow of the steps is illustrated in the following figure. 
 <p align="center">
-  <img src="ProcessML_PR_SHM.png" width="85%">
+  <img src="Flowchat1(3).png" width="85%">
 </p>
 
 The algorithm's steps are detailed in the following:
