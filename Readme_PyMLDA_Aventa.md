@@ -57,9 +57,15 @@ The PyMLDA software uses additional packages required for the algorithm's operat
 10. pip install xgboost
 11. Run the PyMLDA (code).
 
-### 🚀 Launch the PyMLDA
+### 🚀 Launch the PyMLDA for monitoring the Aventa wind turbine
 
-You can start the project by running the `PyMLDA_Machine_Learning_for_Damage_Assessment.ipynb` or `pymlda_machine_learning_for_damage_assessment.py` file in the root directory. With this, the application settings are loaded from the DI dataset `DI_FRAC_Exp-estimation.xlxs`, which is also available in the repository. The system starts processing the DI dataset using the selected model and provides some evaluations on it. The final output is a classification of the system's healthy condition as damaged or healthy and the damage quantification with a variability associated with the estimation.
+You can start the project by running the `PyMLDA_Aventa.ipynb` or `PyMLDA_Aventa.py` file in the root directory. The application settings are loaded from the datasets  available in the repository: 
+1. Normal operation (NO) `Aventa_Dataset_Features_Xs_Ys_Zs - Normal_operation.xlxs`
+2. Aerodynamic imbalance (AI) `Aventa_Dataset_Features_Xs_Ys_Zs - Aerodynamic_imbalance_Mod.xlxs`
+3. Pitch coupling drive failure (FC) `Aventa_Dataset_Features_Xs_Ys_Zs - Failure_coupling.xlxs` 
+4. Rotor icing (RI) `Aventa_Dataset_Features_Xs_Ys_Zs - Rotor_icing_mod.xlxs` 
+
+The PyMLDA opens, processes, and assembles the binary or multiclass data sets as the choice of use. All dataset provides the normalised and scaled damage features. Those fault metrics are the input for the unsupervised K-means, recognise the pattern, and cluster in the recognised conditions.  The final output is a classification of the system's operation condition as NO or AI, e.g., in the binary case, or  NO, AI, FC, and RI in the multiclass case.
 
 
 ## 🧩 Contribution Guide
